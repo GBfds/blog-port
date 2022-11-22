@@ -6,10 +6,10 @@
         margin: 2rem auto;
         width: 100%;
         min-height: 6rem;
-        background-color: var(--roxo-100);
+        background-color: var(--roxo-200);
         padding: 1rem;
         border: 1px solid var(--verde);
-        border-radius: 15px;
+        border-radius: 10px;
 
         display: flex;
         flex-direction: row;
@@ -18,7 +18,7 @@
         .img{
             border: 1px solid var(--verde);
             width:140px;
-            border-radius: 15px;
+            border-radius: 10px;
         }
 
         .description{
