@@ -4,17 +4,17 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: whitesmoke;
-    border-bottom: 1.5px solid black;
+    background-color: var(--preto);
 
     div{
         width: 100%;
-        height: 3rem;
+        min-height: 3rem;
         text-align: center;
 
         border-bottom: 1.5px solid black;
 
         h1{
+            font-size: 3rem;
             margin-bottom: 5px;
         }
     }

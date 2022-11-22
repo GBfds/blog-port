@@ -5,6 +5,7 @@ import Prismic from "@prismicio/client";
 import {FiChevronLeft,FiChevronsLeft, FiChevronRight,FiChevronsRight} from "react-icons/fi";
 import styles from "./styles.module.scss";
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 
 type Posts= {
@@ -74,6 +75,7 @@ export default function Posts({posts : postsBlog, page, totalPage}: PostsProps){
         </Head>
         <main className={styles.container}>
             {posts.map(post => (
+            <Link href={`/posts/${post.slug}`}>
                 <article key={post.slug} className={styles.post}>
                     <div >
                         <img className={styles.img} src={post.baner} alt="react" />
@@ -83,9 +85,11 @@ export default function Posts({posts : postsBlog, page, totalPage}: PostsProps){
                         <p>{post.description}</p>
                     </div>
                 </article>
+            </Link>
             ))}
 
             <div className={styles.buttonsNavigate}>
+                <div>
                 {currentPage >= 2 && (
                     <div className={styles.left}>
                         <button onClick={() => navigatePage(1)}>
@@ -96,6 +100,8 @@ export default function Posts({posts : postsBlog, page, totalPage}: PostsProps){
                         </button>
                     </div>
                 )}
+                </div>
+                <div>
                 {currentPage < Number(totalPage) && (
                     <div className={styles.rigth}>
                         <button onClick={() => navigatePage(currentPage + 1)}>
@@ -106,6 +112,7 @@ export default function Posts({posts : postsBlog, page, totalPage}: PostsProps){
                         </button>
                     </div>
                 )}
+                </div>
             </div>
         </main>
         </>

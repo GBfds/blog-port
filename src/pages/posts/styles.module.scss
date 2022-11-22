@@ -6,9 +6,9 @@
         margin: 2rem auto;
         width: 100%;
         min-height: 6rem;
-        background-color: whitesmoke;
+        background-color: var(--roxo-100);
         padding: 1rem;
-        border: 1px solid rgb(78, 78, 78);
+        border: 1px solid var(--verde);
         border-radius: 15px;
 
         display: flex;
@@ -16,7 +16,7 @@
         transition: 0.2s;
 
         .img{
-            border: 1px solid rgb(78, 78, 78);
+            border: 1px solid var(--verde);
             width:140px;
             border-radius: 15px;
         }
@@ -36,11 +36,31 @@
         height: 1.5rem;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 3rem;
 
         .left, .rigth{
             button{
                 width: 35px;
                 height: 35px;
+                border: 1px solid var(--verde);
+                border-radius: 4px;
+                background-color: var(--roxo-100);
+                margin: 0 2px;
+
+                svg{
+                    color: var(--verde);
+                }
+
+                transition: 0.2s;
+            }
+
+            button:hover{
+                border-color: var(--roxo-100);
+                background-color: var(--verde);
+
+                svg{
+                    color: var(--roxo-100);
+                }
             }
         }
     }

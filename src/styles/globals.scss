@@ -10,5 +10,23 @@ a{
 }
 
 body{
-  min-height: calc(100vh - 5.5rem);
+  min-height: calc(100vh);
+  background: linear-gradient(to top, var(--roxo-80) , var(--preto) 60%);
+}
+
+:root{
+  --branco: #fff;
+  --preto: #000;
+  --verde: #39FF14;
+  --roxo-100: rgb(22,0,32);
+  --roxo-80: rgb(31,0,46);
+  --azul-10: #add8ec;
+  --azul-20: #87cefa;
+}
+
+h1,h2,h3,p,a{
+  color: var(--azul-10);
+}
+li,time{
+  color: var(--verde);
 }
