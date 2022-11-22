@@ -1,0 +1,65 @@
+{
+  "id": "post",
+  "label": "post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
+      "baner": {
+        "type": "Image",
+        "config": {
+          "label": "baner",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "hospedagem": {
+        "type": "Link",
+        "config": {
+          "label": "hospedagem",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "github": {
+        "type": "Link",
+        "config": {
+          "label": "github",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

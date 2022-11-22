@@ -1,0 +1,23 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "home",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "drove",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Non proident culpa in ullamco est voluptate. Exercitation laborum consectetur id elit eu mollit eiusmod proident voluptate ullamco. Commodo aute laborum qui elit et id tempor consectetur aliqua id sint cupidatat sit esse culpa.",
+        "spans": []
+      }
+    ]
+  }
+}

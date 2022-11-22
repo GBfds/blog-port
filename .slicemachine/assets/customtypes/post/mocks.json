@@ -1,0 +1,49 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "post",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "baner": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+    },
+    "title": "evening",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Pariatur ad ut voluptate elit nisi esse tempor occaecat elit irure adipisicing elit mollit.",
+        "spans": []
+      }
+    ],
+    "hospedagem": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "github": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482"
+    }
+  }
+}
