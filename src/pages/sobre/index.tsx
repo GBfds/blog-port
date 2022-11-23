@@ -1,8 +1,11 @@
 import { getPrismicClient } from "../../services/prismic";
 import Prismic from "@prismicio/client";
 import {RichText} from "prismic-dom";
-
 import { GetStaticProps } from "next";
+import Link from "next/link";
+
+
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import Head from "next/head";
 import styles from "./styles.module.scss";
 
@@ -34,6 +37,22 @@ export default function Sobre({data}: DataProps){
             <li key={item.text}>{item.text}</li>
           ))}
             </ul>
+            <h2>Contatos:</h2>
+            <ul>
+                <Link href="https://www.linkedin.com/in/gabriel-fernandes-245743220/" target="_blank">
+                <li>
+                    <IoLogoLinkedin size={24} color="#0E76A8"/>
+                    Linkedin
+                </li>
+                </Link>
+                <Link href="https://github.com/GBfds" target="_blank">
+                <li>
+                    <IoLogoGithub size={24} color="#FFB800"/>
+                    Github
+                </li>
+                </Link>
+                
+            </ul>
         </main>
         </>
     )
@@ -64,7 +83,6 @@ export const getStaticProps: GetStaticProps = async () => {
         })
     }
     
-    //console.log(data);
     return{
         props:{
             data
