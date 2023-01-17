@@ -31,3 +31,7 @@ h1,h2,h3,p{
 li,time,a{
   color: var(--verde);
 }
+
+body,textarea,input,select,button{
+  font-family: 'Ubuntu', sans-serif;
+}
