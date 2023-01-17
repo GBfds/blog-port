@@ -29,10 +29,10 @@ export default function DatailPost({post}: PostProps){
                 <img src={post.image} alt={post.slug} />
                 <p>{post.description}</p>
 
-                <Link href={post.hospedagem} target="_blank">
+                <Link href={post?.hospedagem} target="_blank">
                     <button>Ver o site</button>
                 </Link>
-                <Link href={post.github}  target="_blank">
+                <Link href={post?.github}  target="_blank">
                     <button>Ver Repositorio</button>
                 </Link>     
 
