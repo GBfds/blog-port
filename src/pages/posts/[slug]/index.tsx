@@ -12,7 +12,7 @@ interface PostProps{
        title: string;
        description: string;
        image: string;
-       hospedagem: string;
+       hospedagem: string | boolean;
        github: string;
        updatedAt: string;
    }
@@ -29,9 +29,12 @@ export default function DatailPost({post}: PostProps){
                 <img src={post.image} alt={post.slug} />
                 <p>{post.description}</p>
 
-                <Link href={post.hospedagem} target="_blank">
-                    <button>Ver o site</button>
-                </Link>
+                {post.hospedagem && (
+                    <Link href={post.hospedagem as string} target="_blank">
+                        <button>Ver o site</button>
+                    </Link>
+                )}
+                    
                 <Link href={post.github}  target="_blank">
                     <button>Ver Repositorio</button>
                 </Link>     
@@ -70,6 +73,10 @@ export const getServerSideProps: GetServerSideProps = async ({req, params}) => {
             month:"long",
             year:"numeric"
         })
+    }
+
+    if (post.hospedagem === undefined){
+        post.hospedagem = false
     }
     
 
