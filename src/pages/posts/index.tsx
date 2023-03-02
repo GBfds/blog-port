@@ -33,7 +33,7 @@ export default function Posts({posts : postsBlog, page, totalPage}: PostsProps){
         const response = prismic.query([
             Prismic.Predicates.at("document.type", "post")
         ],{
-            orderings: "[document.last_publication_date]",
+            orderings: "[document.last_publication_date desc]",
             fetch: ["post.title", "post.description", "post.baner"],
             pageSize: 3,
             page: String(pageNumber)
