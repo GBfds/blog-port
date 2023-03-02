@@ -16,7 +16,8 @@
 
         img{
             width: 100%;
-            min-height: 40vh;
+            min-height: 30vh;
+            object-fit: contain;
             margin-bottom: 0.6rem;
         }
         p{
